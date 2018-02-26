@@ -1,5 +1,7 @@
 # mini-message
 一款简单的提示框组件
+## 兼容性
+ie10+
 ## 用法
 1. 引入js文件，如：  
 ``<script src="./js/message.js"></script>``
