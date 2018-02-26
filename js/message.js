@@ -13,7 +13,7 @@ function Message() {
 // 主函数
 Message.prototype.show = function (info) {
   var messageBox = document.getElementById('message');
-  messageBox.getElementsByTagName('span')[0].innerText = info
+  messageBox.getElementsByTagName('span')[0].innerText = info;
   messageBox.classList.add('show');
   // 函数节流
   this.timer && clearTimeout(this.timer);
