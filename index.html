@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge,chrome=1'>
+  <style>
+  body {
+    padding-top: 100px;
+    text-align: center;
+  }
+  button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: none;
+  }
+  </style>
+  <title>简单message组件预览</title>
+</head>
+<body>
+  <button id="btn1">显示信息1</button>
+  <button id="btn2">显示信息2</button>
+  <button id="btn3">显示信息3</button>
+  <script src="./js/message.js"></script>
+  <script>
+    var message = new Message();
+    document.getElementById('btn1').onclick = function () {
+      message.show('message');
+    };
+    document.getElementById('btn2').onclick = function () {
+      message.show('小生不才');
+    };
+    document.getElementById('btn3').onclick = function () {
+      message.show('见笑见笑');
+    };
+  </script>
+</body>
+</html>
